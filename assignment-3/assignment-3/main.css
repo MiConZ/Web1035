@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #b89372 100%);
+    font-family: 'Outfit', 'Poppins', sans-serif;
+    color: #2d3748;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* พื้นหลังมีลวดลาย/สีสด */
+    /* background: radial-gradient(circle at 20% 20%, #ff9a9e 0%, #fad0c4 99%),
+                radial-gradient(circle at 80% 80%, #a1c4fd 0%, #c2e9fb 100%); */
+}
+a:link {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* visited link */
+a:visited {
+    color: #805ad5;
+}
+
+/* mouse over link */  
+a:hover { 
+    color: #e53e3e;
+    text-decoration: underline;
+} 
+
+/* active link */
+a:active {
+    color: #dd6b20;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    background-color:#fffaf0; 
+    border: 2px solid #000000;
+    color: #795a4f;
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+    border-radius: 16px;
+    max-width: 1300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+     background-color: #e9e0d4;
+    color: #795a4f;
+    font-size: 27px;
+    font-weight: 600;
+    border-radius: 15px;
+    max-width: 1000px;
+    border-bottom: 3px solid #e4d594;
+}
+span {
+    background-color: #ffffff;
+    font-size: 40px;
+    color: #4a5568;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+img {
+    width: 90%;
+    height: 100;
+    max-width: 80%;
+    
+}
+.center{
+    text-align: center;
+}
+.logo-img {
+    width: 100%;
+    max-width: 320px;
+}
+ul {
+    font-family: Garamond, "Times New Roman", serif; 
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #fffaf0;
+    border-left: 5px solid #dd6b20;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    text-align: left;
+    
+    /* Centering the block */
+    margin: 30px auto;
+    width: 1000px;
+    padding: 20px 30px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    color: #5a3e2b;
+}
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color:  #fffaf0;
+    border-radius: 16px;
+    justify-content: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.flex_container > div {
+    background-color: #dbd79d;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    width: 160px;
+    margin: 10px;
+    text-align: center;
+    object-fit: contain;
+    
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.04);
+}
+
+
+div a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2b6cb0;
+    background-color: #ebf8ff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+hr {
+    height: 10px;
+    color: #b99e62;
+    background-color: #fad7a3;
+    border: none;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* 1. Global Transition for smooth animation state changes */
+a, button, img, div, .div_display, .flex_container > div, .table_Border tr, .valign-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 2. Hover scaling and rotation effects on Pokemon Images */
+.div_display img:hover, .flex_container > div img:hover, #pokemon_pic:hover, .valign-demo-img:hover {
+    transform: scale(1.15) rotate(4deg);
+    filter: drop-shadow(0 8px 16px rgba(49, 130, 206, 0.35));
+}
+
+/* 3. Pokedex Card Containers Hover state (Glow, elevation) */
+.div_display:hover, .flex_container > div:hover, .valign-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(49, 130, 206, 0.12);
+    border-color: #3182ce;
+}
+
+
+.logo-img {
+    animation: logoPulse 4s infinite ease-in-out;
+}
+
+.card-layout {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 800px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+
