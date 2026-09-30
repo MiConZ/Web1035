@@ -29,10 +29,15 @@ div{
     font-size: 30px;
     font-weight: bold;
     color: rgb(255, 255, 255);
+   
+}
+.Ass_page{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
-
-th{
+th{ 
     text-decoration: underline;
    
 }
@@ -56,4 +61,4 @@ th, td {
     text-align: center;
 }
 .table_Border {
-    border: 3px solid #ff1010;}
+    border: 3px solid #fffefe;}
