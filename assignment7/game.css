@@ -3,7 +3,7 @@
    ตกแต่งให้สวยงาม สะอาดตา และ User-Friendly ตามเกณฑ์การให้คะแนน
    ============================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -173,3 +173,5 @@ button#start:active {
 .magenta {
     background-color: #d946ef;
 }
+
+
