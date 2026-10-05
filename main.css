@@ -36,17 +36,16 @@ h2 {
 
 h3 { 
     color: #334155; 
-    line-height: 1.6; 
+    
 }
 
 body > div:first-of-type {
     display: grid;
     grid-template-columns: 200px 1fr;
-    gap: 20px 28px;
     align-items: center;
     padding: 26px;
     background: #ffffffdd;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 12px 32px #0f172a14;
 }
 
