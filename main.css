@@ -178,3 +178,75 @@ a:hover { color: #000000; }
 }
 
 .youtube-link:hover { color: white; background: #141416; }
+
+#menu {
+    display: flex;
+    position: fixed;
+    top: 180px;
+    left: 18px;
+    z-index: 10;
+    width: 155px;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 16px;
+    background: #ffffffdd;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px #0f172a0f;
+}
+
+body > * {
+    max-width: 980px;
+    margin-left: 195px;
+    margin-right: 24px;
+}
+
+#menu {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.menu-item {
+    padding: 12px 24px;
+    color: #4338ca;
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    border: 1px solid #c7d2fe;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.menu-item:hover,
+.menu-item.active 
+{
+    color: white;
+    background: #4f46e5;
+    transform: translateY(-2px);
+}
+
+
+#contact 
+{ 
+    scroll-margin-top: 20px; 
+}
+
+@media (min-width: 701px) {
+    body {
+        padding-left: 195px;
+    }
+
+    body > * {
+        width: min(1030px, 100%);
+        max-width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu {
+        width: 155px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

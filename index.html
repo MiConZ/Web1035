@@ -7,6 +7,7 @@
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -25,7 +26,13 @@
     </div>
     <hr>
 
-    <h2>INFORMATION</h2>
+    <nav id="menu" aria-label="Portfolio navigation">
+        <button class="menu-item active" data-target="mon_pic">Information</button>
+        <button class="menu-item" data-target="contact">Contact</button>
+        <button class="menu-item" data-target="assignments">Assignments</button>
+    </nav>
+
+    <h2 id="information">INFORMATION</h2>
     <h3>กำลังศึกษาอยู่ มหาวิทยาลัยพระจอมเกล้าธนบุรี คณะสถาปัตยกรรมเเละการออกเเบบบริหารร่วมหลักสูตรมีเดียเทค เอกพัฒนาเกม ปีที่ 3</h3>
       
      <table class="table_Border">
@@ -44,7 +51,7 @@
 
    
    
-<div class="left_page">
+<div class="left_page" id="contact">
     <!-- Link  -->
     <br>
     <p><img src="Facebookicon.png" width="50" height="50" alt="Facebookicon" />  search for it on <a href="https://www.facebook.com/share/19MtHzSnES/">Facebook</a></p>
@@ -54,7 +61,7 @@
    <hr>
    </div>
 
- <h2>Assignments </h2>
+ <h2 id="assignments">Assignments </h2>
 <div class="Ass_page">
      <section class="animation-showcase" aria-label="Animation projects">
         <article class="animation-card">
